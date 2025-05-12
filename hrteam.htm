@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accenture Learning Cards</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    .accenture-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+      background: #ffffff;
+    }
+
+    .accenture-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      overflow: hidden;
+      width: 100%;
+      max-width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .accenture-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+
+    .accenture-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .accenture-card-content {
+      padding: 16px;
+    }
+
+    .accenture-card-content h3 {
+      font-size: 1.2rem;
+      color: #002d62; /* Accenture deep blue */
+      margin: 0 0 10px;
+    }
+
+    .accenture-card-content p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .highlight {
+      color: #a100ff; /* Accenture purple highlight */
+      font-weight: 600;
+    }
+
+    @media (min-width: 768px) {
+      .accenture-card {
+        flex: 1 1 calc(33.33% - 40px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="accenture-section">
+    <div class="accenture-card">
+      <img src="images/worklearn.png" alt="Work Learn Fusion">
+      <div class="accenture-card-content">
+        <h3>Work Learn Fusion</h3>
+        <p>At Accenture, our learning approach is simple: you learn best by doing. Whether through hands-on
+          projects, formal training, or continuous feedback...</p>
+      </div>
+    </div>
+
+    <div class="accenture-card">
+      <img src="images/24by7.jpg" alt="Access 24/7 Learning">
+      <div class="accenture-card-content">
+        <h3>Access 24/7 Learning</h3>
+        <p>Use <span class="highlight">myLearning</span> to find training prioritized for you to complete, curated
+          by Accenture experts...</p>
+      </div>
+    </div>
+
+    <div class="accenture-card">
+      <img src="images/unlease.jpg" alt="Unleash your Potential">
+      <div class="accenture-card-content">
+        <h3>Unleash your Potential</h3>
+        <p>Build your <span class="highlight">Core Capabilities</span> to deliver on the promise of technology and
+          human ingenuity...</p>
+      </div>
+    </div>
+
+    <div class="accenture-card">
+      <img src="images/findmind.jpg" alt="Feed your Mind">
+      <div class="accenture-card-content">
+        <h3>Feed your Mind</h3>
+        <p>Explore <span class="highlight">Learning Boards</span> on virtually any topic from A to Z...</p>
+      </div>
+    </div>
+
+    <div class="accenture-card">
+      <img src="images/learningday.jpg" alt="Learning Day">
+      <div class="accenture-card-content">
+        <h3>Learning Day</h3>
+        <p>Discover and enroll in <span class="highlight">learning in Workday</span> to build the skills you want
+          and need...</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

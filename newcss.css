@@ -1,0 +1,127 @@
+/* Dark Accenture Theme */
+
+:root {
+    --primary: #A100FF;
+    --secondary: #2c2c2c;
+    --text-dark: #f0f0f0;
+    --background-dark: #121212;
+    --accent-dark: #1f1f1f;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+  }
+  
+  header, footer {
+    background-color: var(--accent-dark);
+    color: var(--text-dark);
+  }
+  
+  .logo-container span {
+    color: var(--primary);
+  }
+  
+  nav a, .dropdown > a {
+    color: var(--text-dark);
+  }
+  
+  .dropdown > a:hover,
+  .dropdown-content a:hover,
+  .footer-section a:hover {
+    color: var(--primary);
+  }
+  
+  .dropdown-content {
+    background-color: var(--accent-dark);
+  }
+  
+  .dropdown-content a {
+    color: var(--text-dark);
+  }
+  
+  main, .news-section, .leader-speak, .chartcontainer, section, .gallery-section, .feedback-section, .testimonial, .leader-card, .home-header, .whatwedo-header {
+    background-color: var(--secondary);
+    color: var(--text-dark);
+  }
+  
+  .news-section h3, .leader-card h3, .feedback-section h2, .whatwedo-content h2, .headline, .subheadline, .section-title {
+    color: var(--primary);
+  }
+  
+  .news-item {
+    border-bottom: 1px solid #444;
+  }
+  
+  .testimonial {
+    background-color: #1e1e1e;
+    border-left-color: var(--primary);
+  }
+  
+  .testimonial-content span {
+    color: #ccc;
+  }
+  
+  .gallery img, .leader-card img, .whatwedo-image-container img, .hierarchy img {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  footer {
+    border-top: 4px solid var(--primary);
+  }
+  
+  .footer-section h4 {
+    color: var(--primary);
+  }
+  
+  .footer-section a {
+    color: #ccc;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #333;
+    color: #888;
+  }
+  
+  section, .leader-speak, .news-section, .feedback-section, .chartcontainer {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero::after {
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero h1 {
+    color: #f0f0f0;
+  }
+  
+  #home,
+  #journey,
+  #automation,
+  #iaspire,
+  #structure,
+  #growth,
+  #learning {
+    background-color: var(--background-dark);
+  }
+  
+  .leader-card p, .testimonial-content p, .whatwedo-content p, .structure-content p {
+    color: #ccc;
+  }
+  
+  .chartcontainer {
+    background-color: var(--accent-dark);
+  }
+  

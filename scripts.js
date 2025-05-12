@@ -217,3 +217,14 @@ document.getElementById('scrollToTop').addEventListener('click', function () {
     behavior: 'smooth'
   });
 });
+
+
+    // Open HR modal function
+    function openHRModal() {
+      document.getElementById('hrmodal').classList.remove('hidden');
+    }
+
+    // Close HR modal function
+    function closeHRModal() {
+      document.getElementById('hrmodal').classList.add('hidden');
+    }
