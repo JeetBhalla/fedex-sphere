@@ -1,121 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Accenture Learning Cards</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Operating Structure</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
       color: #333;
     }
 
-    .accenture-section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    #structure {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .whatwedo-header h1 {
+      font-size: 2.5em;
+      color: #4b007d;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .structure-content {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    h3 {
+      text-align: center;
+      color: #4b007d;
+      margin-bottom: 20px;
+    }
+
+    .leader-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      padding: 40px;
-      background: #ffffff;
     }
 
-    .accenture-card {
-      background: #fff;
+    .leader-card {
+      position: relative;
+      background-color: #ffffff;
       border-radius: 16px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      transition: all 0.4s ease;
       overflow: hidden;
+      max-height: 350px;
+    }
+
+    .leader-card:hover {
+      max-height: 500px;
+    }
+
+    .leader-card img {
       width: 100%;
-      max-width: 300px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
     }
 
-    .accenture-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    .leader-card:hover img {
+      transform: scale(1.05);
     }
 
-    .accenture-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
+    .leader-card h3 {
+      margin: 10px 0 4px;
+      color: #4b007d;
     }
 
-    .accenture-card-content {
-      padding: 16px;
+    .leader-card p {
+      font-size: 14px;
+      color: #555;
+      margin: 0;
     }
 
-    .accenture-card-content h3 {
-      font-size: 1.2rem;
-      color: #002d62; /* Accenture deep blue */
-      margin: 0 0 10px;
+    .tooltip-text {
+      opacity: 0;
+      max-height: 0;
+      margin-top: 12px;
+      overflow: hidden;
+      font-size: 13px;
+      color: #333;
+      text-align: left;
+      background-color: #eef1f6;
+      padding: 10px 14px;
+      border-left: 4px solid #4b007d;
+      border-radius: 8px;
+      transition: all 0.4s ease;
     }
 
-    .accenture-card-content p {
-      font-size: 0.95rem;
-      line-height: 1.4;
+    .leader-card:hover .tooltip-text {
+      opacity: 1;
+      max-height: 300px;
     }
 
-    .highlight {
-      color: #a100ff; /* Accenture purple highlight */
-      font-weight: 600;
+    .hierarchy {
+      text-align: center;
+      margin-top: 50px;
     }
 
-    @media (min-width: 768px) {
-      .accenture-card {
-        flex: 1 1 calc(33.33% - 40px);
-      }
+    .hierarchy img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
     }
   </style>
 </head>
+
 <body>
-
-  <div class="accenture-section">
-    <div class="accenture-card">
-      <img src="images/worklearn.png" alt="Work Learn Fusion">
-      <div class="accenture-card-content">
-        <h3>Work Learn Fusion</h3>
-        <p>At Accenture, our learning approach is simple: you learn best by doing. Whether through hands-on
-          projects, formal training, or continuous feedback...</p>
+  <section id="structure">
+    <div class="whatwedo-header">
+      <h1>Our Operating Structure</h1>
+    </div>
+    <div class="structure-content">
+      <p>At FedEx, our operating structure is designed to support both regional and global operations, providing
+        flexibility and efficiency in delivery services. Our leadership team is committed to fostering innovation,
+        sustainability, and excellence across all facets of our organization.</p>
+    </div>
+    <h3>Know Your Leaders</h3>
+    <div class="leader-grid">
+      <div class="leader-card">
+        <img src="images/suresh.jpg" alt="Suresh Bhandarkar">
+        <h3>Suresh Bhandarkar</h3>
+        <p>ATCI-FedEx Lead</p>
+        <div class="tooltip-text">Accenture-FedEx is a story of scale, speed, and service—and our collaboration is a
+          masterclass in trust and transformation. We are not just supporting a business; we are co-authoring a
+          future-forward vision where technology drives logistics, and innovation drives growth.</div>
       </div>
+      <!-- Add more cards here in the same format -->
     </div>
 
-    <div class="accenture-card">
-      <img src="images/24by7.jpg" alt="Access 24/7 Learning">
-      <div class="accenture-card-content">
-        <h3>Access 24/7 Learning</h3>
-        <p>Use <span class="highlight">myLearning</span> to find training prioritized for you to complete, curated
-          by Accenture experts...</p>
-      </div>
+    <div class="hierarchy">
+      <img src="images/Picture43.png" alt="FedEx Operating Structure Chart" />
     </div>
-
-    <div class="accenture-card">
-      <img src="images/unlease.jpg" alt="Unleash your Potential">
-      <div class="accenture-card-content">
-        <h3>Unleash your Potential</h3>
-        <p>Build your <span class="highlight">Core Capabilities</span> to deliver on the promise of technology and
-          human ingenuity...</p>
-      </div>
-    </div>
-
-    <div class="accenture-card">
-      <img src="images/findmind.jpg" alt="Feed your Mind">
-      <div class="accenture-card-content">
-        <h3>Feed your Mind</h3>
-        <p>Explore <span class="highlight">Learning Boards</span> on virtually any topic from A to Z...</p>
-      </div>
-    </div>
-
-    <div class="accenture-card">
-      <img src="images/learningday.jpg" alt="Learning Day">
-      <div class="accenture-card-content">
-        <h3>Learning Day</h3>
-        <p>Discover and enroll in <span class="highlight">learning in Workday</span> to build the skills you want
-          and need...</p>
-      </div>
-    </div>
-  </div>
-
+  </section>
 </body>
+
 </html>
