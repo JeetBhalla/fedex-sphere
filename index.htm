@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="styles.css" />
   <script src="chatbot_bootstrap.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Owner: Jitender bhalla -->
 </head>
 
@@ -120,12 +121,78 @@
 
     <section class="gallery-section">
       <h2>Image Gallery</h2>
-      <div class="gallery">
+      <!-- <div class="gallery">
         <img src="images/Picture2.jpg" alt="FedEx1">
         <img src="images/Picture1.jpg" alt="FedEx2">
         <img src="images/pic8.jpg" alt="FedEx3 ">
 
+      </div> -->
+
+      <div class="gallery container">
+    <div id="multiItemCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-4">
+                 <img title="Proud to host leaders who drive innovation and collaboration forward" src="images/gallery/Proud to host leaders who drive innovation and collaboration forward.jpeg" class="d-block w-100" alt="FedEx1">
+            </div>
+            <div class="col-md-4">
+                <img title="Strategic minds, shared values — captured in one frame" src="images/gallery/Strategic minds, shared values — captured in one frame.jpeg" class="d-block w-100" alt="FedEx2">
+
+            </div>
+            <div class="col-md-4">
+              <img title="A partnership built on vision, trust, and strong leadership" src="images/gallery/A partnership built on vision, trust, and strong leadership.jpeg" class="d-block w-100" alt="FedEx3 ">
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-4">
+                  <img title="Beyond the workplace, team outing in Coimbatore — building bonds, sharing laughs, and creating memories" src="images/gallery/Beyond the workplace, team outing in Coimbatore — building bonds, sharing laughs, and creating memories.jpeg" class="d-block w-100 " alt="FedEx1">
+            </div>
+            <div class="col-md-4">
+              <!-- <img src="https://via.placeholder.com/300x200?text=Image+2" class="d-block w-100" alt="Image 2"> -->
+              <img title="Great leaders don’t just lead — they teach, uplift, and empower" src="images/gallery/Great leaders don’t just lead — they teach, uplift, and empower.jpeg" class="d-block w-100" alt="FedEx2">
+
+            </div>
+            <div class="col-md-4">
+              <!-- <img src="https://via.placeholder.com/300x200?text=Image+3" class="d-block w-100" alt="Image 3"> -->
+              <img title="Our leaders giving back at the Pune NGO Visit — not for the spotlight, but for the smiles" src="images/gallery/Our leaders giving back at the Pune NGO Visit — not for the spotlight, but for the smiles.jpeg" class="d-block w-100" alt="FedEx3 ">
+            </div>
+          </div>
+        </div>
+
+         <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-4">
+                  <img title="Recognizing excellence — led by those who inspire it every day" src="images/gallery/Recognizing excellence — led by those who inspire it every day.jpeg" class="d-block w-100 " alt="FedEx1">
+            </div>
+            <div class="col-md-4">
+              <!-- <img src="https://via.placeholder.com/300x200?text=Image+2" class="d-block w-100" alt="Image 2"> -->
+              <img title="Snapshot from our tree plantation drive in Pune. Collective action for a sustainable future — one tree, many hands, shared intent" src="images/gallery/Snapshot from our tree plantation drive in Pune. Collective action for a sustainable future — one tree, many hands, shared intent.jpg" class="d-block w-100" alt="FedEx2">
+
+            </div>
+            <div class="col-md-4">
+              <!-- <img src="https://via.placeholder.com/300x200?text=Image+3" class="d-block w-100" alt="Image 3"> -->
+              <img title="When fun, laughter, and learning came together — a joyful visit to Christel House Bangalore" src="images/gallery/When fun, laughter, and learning came together — a joyful visit to Christel House Bangalore.jpeg" class="d-block w-100" alt="FedEx3 ">
+            </div>
+          </div>
+        </div>
+
       </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
     </section>
 
     <section id="newjoiner" class="feedback-section">
@@ -694,6 +761,7 @@
   </footer>
   <script src="scripts.js"></script>
   <!-- Owner: Jitender bhalla -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
