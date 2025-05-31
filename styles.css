@@ -1438,3 +1438,150 @@ news-section li {
         font-size: 1.5rem;
       }
     }
+
+    /* ---- */
+
+    /* Tab Container */
+  /* Modal Overlay */
+    .portfoliomodal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+      animation: fadeIn 0.3s ease;
+    }
+
+    /* Modal Content */
+    .portfoliomodal-content {
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 0;
+      border-radius: 16px;
+      width: 90%;
+      /* max-width: 1000px; */
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      animation: slideIn 0.4s ease;
+    }
+
+    .portfoliomodal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(90deg, #9231dc, #3e1e9e);
+      color: white;
+      padding: 16px;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+    }
+
+    .portfoliomodal-header h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .paiclose {
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      color: white;
+    }
+
+    /* Tab Section */
+    .tab-buttons {
+      display: flex;
+      background: #eee;
+    }
+
+    .tab-buttons button {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      outline: none;
+      background: transparent;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .tab-buttons button.active {
+      background: #9231dc;
+      color: white;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 5px;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0 }
+      to { opacity: 1 }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-30px); opacity: 0 }
+      to { transform: translateY(0); opacity: 1 }
+    }
+
+    /* -------------- */
+
+     .scocontainer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .tile {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+      padding: 1.5rem;
+      transition: transform 0.2s;
+    }
+    .tile:hover {
+      transform: translateY(-5px);
+    }
+    .tile h2 {
+      color: #6a1b9a;
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+    .tile p, .tile ul {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #283593;
+    }
+
+    /* ---------- */
+
+      .underconstructioncontainer {
+           background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      margin: 10px;
+    }
+
+    .underconstructioncontainer img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    .ucp{
+      text-align: center;
+      size: 2rem;;
+
+     }

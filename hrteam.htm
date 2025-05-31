@@ -3,189 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Demographics & Highlights</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <title>Page Under Construction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    /* Reset & base styling */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
-      line-height: 1.6;
-      padding: 40px;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #6a1b9a, #283593);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      flex-direction: column;
+      padding: 1rem;
     }
 
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #4b0082;
-      background: linear-gradient(to right, #4b0082, #1abc9c);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .underconstructioncontainer {
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
     }
 
-    .pisection {
-      max-width: 1200px;
-      margin: 0 auto;
+    .underconstructioncontainer img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 1.5rem;
     }
 
-    .pigrid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-bottom: 40px;
-    }
-
-    .picard {
-      background-color: #fff;
-      border-radius: 16px;
-      padding: 20px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .picard:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 20px rgba(0,0,0,0.15);
-    }
-
-    .piicon {
-      font-size: 2rem;
-      color: #4b0082;
-      margin-bottom: 10px;
-      display: block;
-    }
-
-    .picard h3 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-      color: #1a1a1a;
-    }
-
-    .picard ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .picard ul li {
-      margin-bottom: 8px;
-      padding-left: 20px;
-      position: relative;
-    }
-
-    .picard ul li::before {
-      content: '•';
-      position: absolute;
-      left: 0;
-      color: #1abc9c;
-      font-weight: bold;
-    }
-
-    @media (max-width: 768px) {
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      .piicon {
-        font-size: 1.5rem;
-      }
-    }
   </style>
 </head>
 <body>
-
-  <section class="pisection" id="p&i"> 
-    <div>
-      <h2>Demographics & Key Callouts</h2>
-      <div class="pigrid">
-        <div class="picard">
-          <i class="fas fa-users piicon"></i>
-          <h3>Team Composition</h3>
-          <ul>
-            <li>69 SOs</li>
-            <li>398 Applications</li>
-            <li>64% Development, 1% Testing, 35% Support</li>
-          </ul>
-        </div>
-        <div class="picard">
-          <i class="fas fa-layer-group piicon"></i>
-          <h3>Support Tiers</h3>
-          <ul>
-            <li>11% Tier 1</li>
-            <li>4% Tier 2</li>
-            <li>85% Tier 3-5</li>
-          </ul>
-        </div>
-        <div class="picard">
-          <i class="fas fa-flag-checkered piicon"></i>
-          <h3>Milestones</h3>
-          <ul>
-            <li>VEDR with eGPS</li>
-            <li>Recharge Phase 2/2B</li>
-            <li>Legacy CESE Modernized</li>
-            <li>GVM on Mobile</li>
-          </ul>
-        </div>
-        <div class="picard">
-          <i class="fas fa-bullseye piicon"></i>
-          <h3>Delivery Stats</h3>
-          <ul>
-            <li>98% Planned Features Delivered</li>
-            <li>73 PI Features Delivered</li>
-            <li>2 CSRs Enabled</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <h2>Peak Season Highlights</h2>
-      <div class="pigrid">
-        <div class="picard">
-          <i class="fas fa-signal piicon"></i>
-          <h3>Operational Readiness</h3>
-          <ul>
-            <li>Zero Disruptions</li>
-            <li>100% Application Support</li>
-            <li>Co-Location Enabled</li>
-          </ul>
-        </div>
-        <div class="picard">
-          <i class="fas fa-chart-line piicon"></i>
-          <h3>Performance Dashboards</h3>
-          <ul>
-            <li>Real-time & Historical Insights</li>
-            <li>Volume & Performance Reviews</li>
-            <li>Infra Scaling Plans</li>
-          </ul>
-        </div>
-        <div class="picard">
-          <i class="fas fa-tools piicon"></i>
-          <h3>Infra & Tooling</h3>
-          <ul>
-            <li>CI/CD & File Transfers</li>
-            <li>BC/DR Documentation</li>
-            <li>AppD, Splunk, Grafana Setup</li>
-          </ul>
-        </div>
-        <div class="picard">
-          <i class="fas fa-users-cog piicon"></i>
-          <h3>Team & Shift Planning</h3>
-          <ul>
-            <li>Shift Rosters & Escalation Matrix</li>
-            <li>Mock Drills, PTO Planning</li>
-            <li>SUDs & SOPs Ready</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  <div class="underconstructioncontainer">
+    <img src="https://img.icons8.com/fluency/96/hammer.png" alt="Hammer Icon" />
+    <h1>Page Under Construction</h1>
+    <p>We're currently working on this page to bring you an improved experience.<br>Please check back soon!</p>
+  </div>
 </body>
 </html>

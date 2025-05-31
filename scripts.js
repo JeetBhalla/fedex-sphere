@@ -147,7 +147,7 @@ const appreciationChart = new Chart(ctx, {
         beginAtZero: true,
         max: 100,
         ticks: {
-          callback: function(value) {
+          callback: function (value) {
             return value + '%';
           }
         }
@@ -157,7 +157,7 @@ const appreciationChart = new Chart(ctx, {
       legend: { display: false },
       tooltip: {
         callbacks: {
-          label: function(context) {
+          label: function (context) {
             return `Score: ${context.parsed.y}%`;
           }
         }
@@ -184,7 +184,7 @@ function closeModal() {
 }
 
 // Close modal when clicking outside the content
-window.onclick = function(event) {
+window.onclick = function (event) {
   const modal = document.getElementById("teamModal");
   if (event.target == modal) {
     modal.style.display = "none";
@@ -219,12 +219,36 @@ document.getElementById('scrollToTop').addEventListener('click', function () {
 });
 
 
-    // Open HR modal function
-    function openHRModal() {
-      document.getElementById('hrmodal').classList.remove('hidden');
+// Open HR modal function
+function openHRModal() {
+  document.getElementById('hrmodal').classList.remove('hidden');
+}
+
+// Close HR modal function
+function closeHRModal() {
+  document.getElementById('hrmodal').classList.add('hidden');
+}
+
+
+
+// ------------PortfolioModal-----------------
+
+ function portfoliomodal() {
+      document.getElementById('portfolioModal').style.display = 'block';
     }
 
-    // Close HR modal function
-    function closeHRModal() {
-      document.getElementById('hrmodal').classList.add('hidden');
+    function portfoliocloseModal() {
+      document.getElementById('portfolioModal').style.display = 'none';
     }
+
+    function switchTab(index) {
+      const contents = document.querySelectorAll('.tab-content');
+      const buttons = document.querySelectorAll('.tab-btn');
+
+      contents.forEach((content, i) => {
+        content.classList.toggle('active', i === index);
+        buttons[i].classList.toggle('active', i === index);
+      });
+    }
+
+

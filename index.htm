@@ -32,12 +32,12 @@
         </div>
       </div>
       <div class="dropdown">
-        <a href="#">Portfolio Overview</a>
-        <div class="dropdown-content">
+        <a style="cursor: pointer;" onclick="portfoliomodal()">Portfolio Overview</a>
+        <!-- <div class="dropdown-content">
           <a href="#sco">SCO</a>
           <a href="#ddc">DDC</a>
           <a href="#pai">PAI</a>
-        </div>
+        </div> -->
       </div>
       <div class="dropdown">
         <a href="#">Growth and Innovation</a>
@@ -691,97 +691,182 @@
           </div>
         </div>
     </section>
+    <div id="portfolioModal" class="portfoliomodal">
+      <div class="portfoliomodal-content">
+        <div class="portfoliomodal-header">
+          <h2>Portfolio Overview</h2>
+          <span class="paiclose" onclick="portfoliocloseModal()">&times;</span>
+        </div>
 
-  <section class="pisection" id="p&i"> 
-     <div class="aspire-header">
-        <h1>PAI</h1>
-      </div>
-    <div>
-      <h2>Demographics & Key Callouts</h2>
-      <div class="pigrid">
-        <div class="picard">
-          <i class="fas fa-users piicon"></i>
-          <h3>Team Composition</h3>
-          <ul>
-            <li>69 SOs</li>
-            <li>398 Applications</li>
-            <li>64% Development, 1% Testing, 35% Support</li>
-          </ul>
+        <div class="tab-buttons">
+          <button class="tab-btn active" onclick="switchTab(0)">Portfolio Insights</button>
+          <button class="tab-btn" onclick="switchTab(1)">Supply Chain Operations</button>
+          <button class="tab-btn" onclick="switchTab(2)">DDC</button>
+
         </div>
-        <div class="picard">
-          <i class="fas fa-layer-group piicon"></i>
-          <h3>Support Tiers</h3>
-          <ul>
-            <li>11% Tier 1</li>
-            <li>4% Tier 2</li>
-            <li>85% Tier 3-5</li>
-          </ul>
+
+        <div class="tab-content active">
+          <section class="pisection" id="p&i">
+            <div>
+              <h2>Demographics & Key Callouts</h2>
+              <div class="pigrid">
+                <div class="picard">
+                  <i class="fas fa-users piicon"></i>
+                  <h3>Team Composition</h3>
+                  <ul>
+                    <li>69 SOs</li>
+                    <li>398 Applications</li>
+                    <li>64% Development, 1% Testing, 35% Support</li>
+                  </ul>
+                </div>
+                <div class="picard">
+                  <i class="fas fa-layer-group piicon"></i>
+                  <h3>Support Tiers</h3>
+                  <ul>
+                    <li>11% Tier 1</li>
+                    <li>4% Tier 2</li>
+                    <li>85% Tier 3-5</li>
+                  </ul>
+                </div>
+                <div class="picard">
+                  <i class="fas fa-flag-checkered piicon"></i>
+                  <h3>Milestones</h3>
+                  <ul>
+                    <li>VEDR with eGPS</li>
+                    <li>Recharge Phase 2/2B</li>
+                    <li>Legacy CESE Modernized</li>
+                    <li>GVM on Mobile</li>
+                  </ul>
+                </div>
+                <div class="picard">
+                  <i class="fas fa-bullseye piicon"></i>
+                  <h3>Delivery Stats</h3>
+                  <ul>
+                    <li>98% Planned Features Delivered</li>
+                    <li>73 PI Features Delivered</li>
+                    <li>2 CSRs Enabled</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h2>Peak Season Highlights</h2>
+              <div class="pigrid">
+                <div class="picard">
+                  <i class="fas fa-signal piicon"></i>
+                  <h3>Operational Readiness</h3>
+                  <ul>
+                    <li>Zero Disruptions</li>
+                    <li>100% Application Support</li>
+                    <li>Co-Location Enabled</li>
+                  </ul>
+                </div>
+                <div class="picard">
+                  <i class="fas fa-chart-line piicon"></i>
+                  <h3>Performance Dashboards</h3>
+                  <ul>
+                    <li>Real-time & Historical Insights</li>
+                    <li>Volume & Performance Reviews</li>
+                    <li>Infra Scaling Plans</li>
+                  </ul>
+                </div>
+                <div class="picard">
+                  <i class="fas fa-tools piicon"></i>
+                  <h3>Infra & Tooling</h3>
+                  <ul>
+                    <li>CI/CD & File Transfers</li>
+                    <li>BC/DR Documentation</li>
+                    <li>AppD, Splunk, Grafana Setup</li>
+                  </ul>
+                </div>
+                <div class="picard">
+                  <i class="fas fa-users-cog piicon"></i>
+                  <h3>Team & Shift Planning</h3>
+                  <ul>
+                    <li>Shift Rosters & Escalation Matrix</li>
+                    <li>Mock Drills, PTO Planning</li>
+                    <li>SUDs & SOPs Ready</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-        <div class="picard">
-          <i class="fas fa-flag-checkered piicon"></i>
-          <h3>Milestones</h3>
-          <ul>
-            <li>VEDR with eGPS</li>
-            <li>Recharge Phase 2/2B</li>
-            <li>Legacy CESE Modernized</li>
-            <li>GVM on Mobile</li>
-          </ul>
+        <div class="tab-content">
+          <div class="scocontainer">
+
+            <div class="tile">
+              <h2>Demographics Overview</h2>
+              <ul>
+                <li><span class="highlight">93</span> SOs (as of Dec 31st, 2024)</li>
+                <li><span class="highlight">449</span> Applications</li>
+                <li>74% Development, 13% Testing, 13% Support</li>
+                <li><span class="highlight">37K</span> Test Cases (87% Automated)</li>
+              </ul>
+            </div>
+
+            <div class="tile">
+              <h2>Incident & Feature Stats</h2>
+              <ul>
+                <li><span class="highlight">111</span> Major Incidents</li>
+                <li><span class="highlight">368</span> Business Objectives Delivered</li>
+                <li><span class="highlight">97%</span> Planned Features Delivered</li>
+                <li><span class="highlight">3%</span> Increase in Test Automation since Aug’24</li>
+              </ul>
+            </div>
+
+            <div class="tile">
+              <h2>Key Projects & Rollouts</h2>
+              <ul>
+                <li><strong>GTAA Deployment:</strong> Reverse logistics modernization at Toronto airport</li>
+                <li><strong>FORGE 2.8:</strong> No Signature Required, Bulk Scan, PPOD & Alerts</li>
+                <li><strong>FXL Portal:</strong> Legacy GTD2.0 modernization</li>
+                <li><strong>FRO Testing:</strong> Route optimization testing across P&D, Sort, Shipments</li>
+              </ul>
+            </div>
+
+            <div class="tile">
+              <h2>Team Composition</h2>
+              <ul>
+                <li>Wipro: 18 SOs</li>
+                <li>Infosys: 39 SOs</li>
+                <li>Mphasis: 24 SOs</li>
+                <li>ATOS, HCL: Total <span class="highlight">1756</span> resources</li>
+              </ul>
+            </div>
+
+            <div class="tile">
+              <h2>Risks & Mitigations</h2>
+              <ul>
+                <li>Staffing Challenges – Extended contracts in Brazil & Portugal</li>
+                <li>Device Connectivity – Approval to use Accenture laptops</li>
+                <li>Attrition of SMEs – Internal supply plan for niche skills</li>
+                <li>VDI Client Tool Delays – Coordination with FedEx</li>
+              </ul>
+            </div>
+
+            <div class="tile">
+              <h2>Environment Tier Distribution</h2>
+              <ul>
+                <li><span class="highlight">1%</span> Tier 0</li>
+                <li><span class="highlight">16%</span> Tier 1</li>
+                <li><span class="highlight">9%</span> Tier 2</li>
+                <li><span class="highlight">75%</span> Tiers 3–5</li>
+              </ul>
+            </div>
+
+          </div>
         </div>
-        <div class="picard">
-          <i class="fas fa-bullseye piicon"></i>
-          <h3>Delivery Stats</h3>
-          <ul>
-            <li>98% Planned Features Delivered</li>
-            <li>73 PI Features Delivered</li>
-            <li>2 CSRs Enabled</li>
-          </ul>
+        <div class="tab-content">
+          <div class="underconstructioncontainer">
+            <img src="https://img.icons8.com/fluency/96/hammer.png" alt="Hammer Icon" />
+            <h1>Page Under Construction</h1>
+            <p class="ucp">We're currently working on this page to bring you an improved experience.<br>Please check back soon!</p>
+          </div>
         </div>
       </div>
     </div>
-
-    <div>
-      <h2>Peak Season Highlights</h2>
-      <div class="pigrid">
-        <div class="picard">
-          <i class="fas fa-signal piicon"></i>
-          <h3>Operational Readiness</h3>
-          <ul>
-            <li>Zero Disruptions</li>
-            <li>100% Application Support</li>
-            <li>Co-Location Enabled</li>
-          </ul>
-        </div>
-        <div class="picard">
-          <i class="fas fa-chart-line piicon"></i>
-          <h3>Performance Dashboards</h3>
-          <ul>
-            <li>Real-time & Historical Insights</li>
-            <li>Volume & Performance Reviews</li>
-            <li>Infra Scaling Plans</li>
-          </ul>
-        </div>
-        <div class="picard">
-          <i class="fas fa-tools piicon"></i>
-          <h3>Infra & Tooling</h3>
-          <ul>
-            <li>CI/CD & File Transfers</li>
-            <li>BC/DR Documentation</li>
-            <li>AppD, Splunk, Grafana Setup</li>
-          </ul>
-        </div>
-        <div class="picard">
-          <i class="fas fa-users-cog piicon"></i>
-          <h3>Team & Shift Planning</h3>
-          <ul>
-            <li>Shift Rosters & Escalation Matrix</li>
-            <li>Mock Drills, PTO Planning</li>
-            <li>SUDs & SOPs Ready</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
 
     <div id="hrmodal" class="hrmodal-overlay hidden">
       <!-- HR Modal Content -->
