@@ -1585,3 +1585,21 @@ news-section li {
       size: 2rem;;
 
      }
+
+.Innovationbadge {
+  background-color:  #6a1b9a; /* Darker purple with slightly more opacity */
+  padding: 0.3rem 0.75rem !important;
+  border-radius: 9999px !important;
+  font-size: 1.1rem !important;
+  display: inline-block !important;
+  margin: 0.25rem !important;
+  font-weight: bold;
+  color: white;
+
+}
+.automationsection {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}

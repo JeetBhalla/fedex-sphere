@@ -3,44 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Page Under Construction</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>FedEx + Accenture | Automation & Innovation</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to right, #6a1b9a, #283593);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      flex-direction: column;
-      padding: 1rem;
+      background-color: #f8f8f9;
+      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-
-    .underconstructioncontainer {
-      max-width: 600px;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 2rem;
+    .accent {
+      color: #a461d8;
+    }
+    .badge {
+      background-color: rgba(164, 97, 216, 0.1);
+      color: #a461d8;
+      padding: 0.3rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      display: inline-block;
+      margin: 0.25rem;
+    }
+    .automationsection {
+      background-color: white;
       border-radius: 1rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
-
-    .underconstructioncontainer img {
-      width: 120px;
-      height: auto;
-      margin-bottom: 1.5rem;
-    }
-
   </style>
 </head>
-<body>
-  <div class="underconstructioncontainer">
-    <img src="https://img.icons8.com/fluency/96/hammer.png" alt="Hammer Icon" />
-    <h1>Page Under Construction</h1>
-    <p>We're currently working on this page to bring you an improved experience.<br>Please check back soon!</p>
-  </div>
+<body class="p-6">
+  <main class="max-w-7xl mx-auto space-y-10">
+    <!-- Page Title -->
+    <header class="text-center">
+      <h1 class="text-4xl font-bold accent">Accenture + FedEx : Automation & Innovation</h1>
+      <p class="text-gray-600 mt-2">GenAI-driven Transformation Across Knowledge, Infra, Apps & Engineering</p>
+    </header>
+
+    <!-- Transformation Overview -->
+    <section class="automationsection">
+      <h2 class="text-2xl font-semibold accent mb-4">Transformation Journey with GenWizard</h2>
+      <div class="flex flex-wrap mb-4">
+        <span class="badge">Reverse Engineering</span>
+        <span class="badge">Knowledge Transition</span>
+        <span class="badge">Command Center</span>
+        <span class="badge">App & Infra Management</span>
+        <span class="badge">Forward Engineering</span>
+        <span class="badge">Cloud Modernization</span>
+        <span class="badge">Data Engineering</span>
+      </div>
+      <p class="text-sm text-gray-700">
+        FedEx's digital transformation leverages GenWizard automation across 7,562 applications, handling 1.3M+ tickets annually. 
+        Initiatives span KT documentation, DevOps automation, observability, chatbot integration, and application modernization.
+      </p>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="automationsection">
+      <h2 class="text-2xl font-semibold accent mb-4">Integrated Automation Roadmap (AMS & IMS)</h2>
+      <ul class="list-disc ml-5 text-gray-700 space-y-2">
+        <li>75% effort reduction in KT documentation with 1000+ SUDs generated</li>
+        <li>25% ticket reduction via agent sanity checks and event correlation</li>
+        <li>DevOps pilot for 10+ apps, CI/CD tools and automation launched</li>
+        <li>60–80% faster change impact analysis; 20% optimization in regression testing</li>
+        <li>RPA, ZeroTix, and Chatbot use cases delivering measurable impact</li>
+      </ul>
+    </section>
+
+    <!-- Current Progress Section -->
+    <section class="automationsection">
+      <h2 class="text-2xl font-semibold accent mb-4">1-Year Plan Snapshot</h2>
+      <ul class="list-disc ml-5 text-gray-700 space-y-2">
+        <li>Chat prompting sprints across 20 → 40 → 60+ applications</li>
+        <li>Use case identification and ticket analytics for Phase 0–2</li>
+        <li>Reverse Engineering and documentation automation for 30+ apps</li>
+        <li>CAST AIP and Highlight analysis for tech debt and cloud readiness</li>
+        <li>Risk-based testing and FE test case generation for agile squads</li>
+      </ul>
+    </section>
+
+    <!-- Innovation Engine -->
+    <section class="automationsection">
+      <h2 class="text-2xl font-semibold accent mb-4">Innovation & Acceleration Highlights</h2>
+      <ul class="list-disc ml-5 text-gray-700 space-y-2">
+        <li>Self-healing bots, guided ticket resolution, and chatbot integrations</li>
+        <li>Compliance-as-code, DevSecOps pipelines, and CI/CD automation</li>
+        <li>Unified Knowledge Management (UKM) for 30+ applications</li>
+        <li>Day-0 automation via GenWizard assets, 30-60-90 day sprint use cases</li>
+        <li>EventOps for DCS, Network, and EUC insight-driven automation</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-sm text-gray-500">
+      © 2025 Accenture + FedEx | Confidential | Powered by GenAI & Automation
+    </footer>
+  </main>
 </body>
 </html>
